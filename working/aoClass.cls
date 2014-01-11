@@ -34,7 +34,6 @@ End Sub
 '
 '
 Public Function GetContent(OptionString As String) As String
-    Dim AdminUI As Object
     Dim Copy As String
     Dim Help As String
     Dim FieldValue As String
@@ -44,7 +43,6 @@ Public Function GetContent(OptionString As String) As String
     '
     FieldName = Main.GetAddonOption("FieldName", OptionString)
     FieldValue = Main.GetAddonOption("FieldValue", OptionString)
-    Set AdminUI = CreateObject("ccweb3.AdminUIclass")
     
     Copy = Main.GetFormInputTextExpandable(FieldName, FieldValue, 2, , "DTD")
     Help = "" _
@@ -56,7 +54,5 @@ Public Function GetContent(OptionString As String) As String
         & "<div style=""clear:both;margin-left:40px;margin-top:5px;white-space:nowrap;""><input type=""radio"" name=""dmy"" value=""3"" onClick=""document.getElementById('DTD').value='&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-Transitional.dtd&quot;&gt;'""/>XHTML 1.0 Transitional</div>" _
         & ""
     GetContent = Copy & "<div style=""padding:10px;"">" & Help & "</div>"
-    Set AdminUI = Nothing
-    
 End Function
 
