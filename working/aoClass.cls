@@ -52,6 +52,7 @@ Public Function GetContent(OptionString As String) As String
         & "<div style=""clear:both;margin-left:40px;margin-top:5px;white-space:nowrap;""><input type=""radio"" name=""dmy"" value=""1"" onClick=""document.getElementById('DTD').value='&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;'""/>HTML 4.01 Transitional</div>" _
         & "<div style=""clear:both;margin-left:40px;margin-top:5px;white-space:nowrap;""><input type=""radio"" name=""dmy"" value=""2"" onClick=""document.getElementById('DTD').value='&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;'""/>XHTML 1.0 Strict</div>" _
         & "<div style=""clear:both;margin-left:40px;margin-top:5px;white-space:nowrap;""><input type=""radio"" name=""dmy"" value=""3"" onClick=""document.getElementById('DTD').value='&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-Transitional.dtd&quot;&gt;'""/>XHTML 1.0 Transitional</div>" _
+        & "<div style=""clear:both;margin-left:40px;margin-top:5px;white-space:nowrap;""><input type=""radio"" name=""dmy"" value=""4"" onClick=""document.getElementById('DTD').value='&lt;!DOCTYPE html&gt;'""/>HTML 5</div>" _
         & ""
     GetContent = Copy & "<div style=""padding:10px;"">" & Help & "</div>"
 End Function
