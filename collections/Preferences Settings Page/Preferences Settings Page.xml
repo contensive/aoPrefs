@@ -2,43 +2,6 @@
 <Collection name="Preferences Settings Page" guid="{AF80F787-40CE-47E0-B339-E798CC88222A}" system="Yes" updatable="Yes" blockNavigatorNode="No">
 	<HelpLink></HelpLink>
 	<Help></Help>
-	<Addon name="DocType Editor" guid="{A23CF498-E99F-47DA-BCBB-A8AAF53D3E3E}" type="Add-on">
-		<Copy></Copy>
-		<CopyText></CopyText>
-		<ActiveXProgramID><![CDATA[aoPrefs.DocTypeClass]]></ActiveXProgramID>
-		<DotNetClass></DotNetClass>
-		<ArgumentList><![CDATA[FieldName
-FieldValue]]></ArgumentList>
-		<AsAjax>No</AsAjax>
-		<Filter>No</Filter>
-		<Help></Help>
-		<HelpLink></HelpLink>
-		<Icon Link="" width="0" height="0" sprites="0" />
-		<InIframe>No</InIframe>
-		<BlockEditTools>No</BlockEditTools>
-		<FormXML></FormXML>
-		<IsInline>No</IsInline>
-		<JavascriptOnLoad></JavascriptOnLoad>
-		<JavascriptInHead></JavascriptInHead>
-		<JavascriptBodyEnd></JavascriptBodyEnd>
-		<MetaDescription></MetaDescription>
-		<OtherHeadTags></OtherHeadTags>
-		<Content>No</Content>
-		<Template>No</Template>
-		<Email>No</Email>
-		<Admin>No</Admin>
-		<OnPageEndEvent>No</OnPageEndEvent>
-		<OnPageStartEvent>No</OnPageStartEvent>
-		<OnBodyStart>No</OnBodyStart>
-		<OnBodyEnd>No</OnBodyEnd>
-		<RemoteMethod>No</RemoteMethod>
-		<ProcessRunOnce>No</ProcessRunOnce>
-		<ProcessInterval>0</ProcessInterval>
-		<PageTitle></PageTitle>
-		<RemoteAssetLink></RemoteAssetLink>
-		<Styles></Styles>
-		<Scripting Language="" EntryPoint="" Timeout="5000"/>
-	</Addon>
 	<Addon name="Preferences" guid="{D9C2D64E-9004-4DBE-806F-60635B9F52C8}" type="Setting">
 		<Copy></Copy>
 		<CopyText></CopyText>
@@ -171,7 +134,7 @@ FieldValue]]></ArgumentList>
 		<CopyContent caption="Anonymous User Blocking Page" name="AnonymousUserResponseCopy" ReadOnly="0" html="true" Description="When Anonymous User Response is set to Custom Block Form, guests to the site see this content for all pages.">&lt;p style="text-align:center;margin-top:100px;"&gt;This site is not available for anonymous access.&lt;/p&gt;</CopyContent>
 	</Tab>
 	<Tab name="Templates" heading="Template Settings" description="Settings that affect page templates.">
-		<SiteProperty caption="DocType Declaration" name="DocTypeDeclaration" ReadOnly="false" Type="text" Selector="" EditorAddon="DocType Editor" Description="This is the DocType presented at the top of every page on the site."></SiteProperty>
+		<SiteProperty caption="DocType Declaration" name="DocTypeDeclaration" ReadOnly="false" Type="text" Selector="" EditorAddon="" Description="This is the DocType presented at the top of every page on the site."></SiteProperty>
 		<SiteProperty caption="Content Type (default)" name="Template Entity-Header Content-Type" ReadOnly="false" Type="text" Selector="" EditorAddon="" Description="The default value for Content-Type returned in the response entity-header and in equivalant meta tag. Typically 'text/html; charset=utf-8'. Overridden by template record, or programmatically with cp.response.addHeader('Content-Type','text/html; charset=utf-8')">text/html; charset=utf-8</SiteProperty>
 		<SiteProperty caption="Content Language (default)" name="Template Entity-Header Content-Language" ReadOnly="false" Type="text" Selector="" EditorAddon="" Description="The Content-Language returned in the response entity-header and in equivalant meta tag. Typically 'en-us'. Overridden by template record, or programmatically with cp.response.addHeader('Content-Language','en-us').">en-us</SiteProperty>
 	</Tab>
@@ -202,5 +165,4 @@ FieldValue]]></ArgumentList>
 		<Styles></Styles>
 		<Scripting Language="" EntryPoint="" Timeout="5000"/>
 	</Addon>
-	<Resource name="aoprefs.dll" type="executable" path="" />
 </Collection>
