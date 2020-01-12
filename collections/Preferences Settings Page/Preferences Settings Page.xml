@@ -142,7 +142,7 @@
 		<MetaDescription></MetaDescription>
 		<OtherHeadTags></OtherHeadTags>
 		<Content>No</Content>
-		<Template>Yes</Template>
+		<Template>No</Template>
 		<Email>No</Email>
 		<Admin>Yes</Admin>
 		<OnPageEndEvent>No</OnPageEndEvent>
