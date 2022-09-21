@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="windows-1252"?>
-<Collection name="Preferences Settings Page" guid="{AF80F787-40CE-47E0-B339-E798CC88222A}" system="Yes" updatable="Yes" blockNavigatorNode="No" onInstallAddonGuid="{FBB05599-0403-45C5-979C-8DDBA97D426A}">
+<Collection name="Preferences Settings Page" guid="{AF80F787-40CE-47E0-B339-E798CC88222A}" system="Yes" updatable="Yes" blockNavigatorNode="No" onInstallAddonGuid="">
 	<HelpLink></HelpLink>
 	<Help></Help>
-
-	<Addon name="Social Media Install" guid="{FBB05599-0403-45C5-979C-8DDBA97D426A}" type="Add-on">
-		<Scripting Language="VBScript" EntryPoint="" Timeout="5000">
-			<Code><![CDATA[
-		function f
-			'
-			' -- delete Tweets
-			cp.db.executeNonQuery("delete from ccaggregatefunctions where ccguid='{A23CF498-E99F-47DA-BCBB-A8AAF53D3E3E}'")
-		end function
-		]]></Code>
-		</Scripting>
-	</Addon>
 	<Addon name="Preferences" guid="{D9C2D64E-9004-4DBE-806F-60635B9F52C8}" type="Setting">
 		<Copy></Copy>
 		<CopyText></CopyText>
@@ -80,6 +68,7 @@
 		-->
 	</Tab>
 	<Tab name="Images" heading="Resource Handling Settings" description="Settings that affect how Contensive handles resources in the resource library.">
+		<SiteProperty caption="User Default Avatar" name="avatarDefaultPathFilename" ReadOnly="0" Type="ImageFile" Selector="" Description="The avatar for a user when no avatar is stored is their people record."></SiteProperty>
 		<SiteProperty caption="Allow Image Resize" name="ImageAllowSFResize" ReadOnly="0" Type="Boolean" Selector="" Description="When checked, images will be automatically resized if you manually change their size on a page. For instance, if you have a 100 pixel x 100 pixel image in the resource library, and you drop it on a page, and reduce it to only 50x50, Contensive will make another image sized to 50x50, and use that image on the page.">true</SiteProperty>
 		<SiteProperty caption="Allow Image Update" name="ImageAllowUpdate" ReadOnly="0" Type="Boolean" Selector="" Description="When checked, images that have been updated in the resource library will be automatically updated on the site as well.">true</SiteProperty>
 	</Tab>
@@ -107,6 +96,7 @@
 		<SiteProperty caption="Custom Login Add-on" name="Login Page AddonID" ReadOnly="0" selector="[Default:0|ListID(Add-ons)]" description="You can override the default login with any Add-on. For information on how to create an Add-on with just HTML, in Javascript, or with an ActiveX DLL, see the Contensive Knowledge Base at http://Support.Contensive.com"></SiteProperty>
 	</Tab>
 	<Tab name="Site" heading="Site Settings" description="Settings that affect the entire site.">
+		<SiteProperty caption="Site Logo" name="SiteLogoFilename" ReadOnly="0" Type="ImageFile" Selector="" Description="This is the primary logo file that appears by default where a logo is needed. For example in the Theme Header, or in the Station Device Thermal Printer command {{Logo}}"></SiteProperty>
 		<SiteProperty caption="Default Route" name="Default Route AddonId" ReadOnly="0" Type="text" Selector="[Select One:0|listid(add-ons)]" Description="(versiion 5.0) For a typical application, this is the applications main addon. It is executed when no the request to the server does not specify any other command. For example, in the default application website, this is set to the Page Manager which creates an editable website."></SiteProperty>
 		<SiteProperty caption="Allow Link Alias" name="AllowLinkAlias" ReadOnly="0" Type="boolean" Selector="" Description="When enabled, Contensive produces links in a user friendly format similar to the page name.">false</SiteProperty>
 		<SiteProperty caption="Auto HTML Formatting" name="AutoHTMLFormatting" ReadOnly="false" Type="boolean" Selector="" Description="When enabled, the HTML assembled by Contensive is reflowed with tabs and linefeeds to be more human-readable.">&amp;#187;</SiteProperty>
