@@ -2,7 +2,7 @@
 <Collection name="Preferences Settings Page" guid="{AF80F787-40CE-47E0-B339-E798CC88222A}" system="Yes" updatable="Yes" blockNavigatorNode="No" onInstallAddonGuid="">
 	<HelpLink></HelpLink>
 	<Help></Help>
-	<Addon name="Preferences" guid="{D9C2D64E-9004-4DBE-806F-60635B9F52C8}" type="Setting">
+	<Addon name="Site Settings" guid="{D9C2D64E-9004-4DBE-806F-60635B9F52C8}" type="Setting">
 		<Copy></Copy>
 		<CopyText></CopyText>
 		<ActiveXProgramID></ActiveXProgramID>
@@ -104,7 +104,7 @@
 	</Tab>
 	<Tab name="Site" heading="Site Settings" description="Settings that affect the entire site.">
 		<SiteProperty caption="Site Logo" name="SiteLogoFilename" ReadOnly="0" Type="ImageFile" Selector="" Description="This is the primary logo file that appears by default where a logo is needed. For example in the Theme Header, or in the Station Device Thermal Printer command {{Logo}}"></SiteProperty>
-		<SiteProperty caption="Default Route" name="Default Route AddonId" ReadOnly="0" Type="text" Selector="[Select One:0|listid(add-ons)]" Description="(versiion 5.0) For a typical application, this is the applications main addon. It is executed when no the request to the server does not specify any other command. For example, in the default application website, this is set to the Page Manager which creates an editable website."></SiteProperty>
+		<SiteProperty caption="Default Route" name="Default Route AddonId" ReadOnly="0" Type="text" Selector="[Select One:0|listid(add-ons)]" Description="For a typical application, this is the applications main addon. It is executed when no the request to the server does not specify any other command. For example, in the default application website, this is set to the Page Manager which creates an editable website."></SiteProperty>
 		<SiteProperty caption="Allow Link Alias" name="AllowLinkAlias" ReadOnly="0" Type="boolean" Selector="" Description="When enabled, Contensive produces links in a user friendly format similar to the page name.">false</SiteProperty>
 		<SiteProperty caption="Auto HTML Formatting" name="AutoHTMLFormatting" ReadOnly="false" Type="boolean" Selector="" Description="When enabled, the HTML assembled by Contensive is reflowed with tabs and linefeeds to be more human-readable.">&amp;#187;</SiteProperty>
 		<SiteProperty caption="Default Wrapper" name="DefaultWrapperID" ReadOnly="false" Type="Lookup" Selector="[None:0|ListID(Wrappers)]" Description="Select a wrapper you want to use as a default for all cases where you have not set the wrapper on an Add-on."></SiteProperty>
