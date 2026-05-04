@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="windows-1252"?>
-<Collection name="Preferences Settings Page" guid="{AF80F787-40CE-47E0-B339-E798CC88222A}" system="Yes" updatable="Yes" blockNavigatorNode="No" onInstallAddonGuid="">
+<Collection name="Preferences Settings Page" guid="{AF80F787-40CE-47E0-B339-E798CC88222A}" system="Yes" updatable="Yes" blockNavigatorNode="No" onInstallAddonGuid=""
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://contensive.s3.amazonaws.com/xsd/Collection.xsd"
+>
 	<HelpLink></HelpLink>
 	<Help></Help>
 	<!-- settings addon moved to base collection 230118 -->
